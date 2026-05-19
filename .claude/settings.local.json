@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:\\\\Users\\\\tomas\\\\Desktop\\\\analizador-legal\\\\venv\\\\Scripts\\\\python.exe *)",
+      "Bash(C:\\\\Users\\\\tomas\\\\Desktop\\\\analizador-legal\\\\venv\\\\Scripts\\\\pip.exe list *)",
+      "Bash(venv\\\\Scripts\\\\activate)",
+      "Bash(streamlit run *)",
+      "PowerShell(Start-Sleep -Seconds 4; Invoke-WebRequest -Uri \"http://localhost:8501\" -UseBasicParsing -TimeoutSec 5 | Select-Object -ExpandProperty StatusCode)",
+      "PowerShell(Start-Process -NoNewWindow -FilePath \"cmd.exe\" -ArgumentList \"/c\", \"venv\\\\Scripts\\\\activate && streamlit run app.py --server.headless true\" -RedirectStandardOutput \"$env:TEMP\\\\streamlit_out.txt\" -RedirectStandardError \"$env:TEMP\\\\streamlit_err.txt\")",
+      "PowerShell(Start-Sleep -Seconds 5; try { $r = Invoke-WebRequest -Uri \"http://localhost:8501\" -UseBasicParsing -TimeoutSec 5; $r.StatusCode } catch { \"Not up yet: $_\" })"
+    ]
+  }
+}

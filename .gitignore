@@ -1,0 +1,4 @@
+# Esto evita que subas accidentalmente tu API key o archivos innecesarios a GitHub.
+.env
+venv/
+__pycache__/
