@@ -38,3 +38,24 @@ pip install -r requirements.txt
 ## Configuración
 
 Creá un archivo `.env` en la raíz del proyecto:
+
+Obtenés tu API key gratuita en [console.groq.com](https://console.groq.com)
+
+## Uso
+
+```bash
+streamlit run app.py
+```
+
+Abrí el navegador en `http://localhost:8501`, subí un PDF y listo.
+
+## Estructura del proyecto
+
+analizador-legal/
+├── app.py              # Interfaz Streamlit
+├── pdf_reader.py       # Extracción de texto del PDF
+├── analyzer.py         # Integración con Groq API
+├── prompts.py          # Prompt del sistema
+├── requirements.txt    # Dependencias
+└── assets/
+└── screenshot.png  # Screenshot de la app
