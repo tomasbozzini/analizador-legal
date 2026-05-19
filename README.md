@@ -24,7 +24,7 @@ Herramienta web que analiza contratos y documentos legales en PDF y los explica 
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tuusuario/analizador-legal.git
+git clone https://github.com/tomasbozzini/analizador-legal.git
 cd analizador-legal
 
 # Crear entorno virtual
