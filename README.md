@@ -51,6 +51,7 @@ Abrí el navegador en `http://localhost:8501`, subí un PDF y listo.
 
 ## Estructura del proyecto
 
+```
 analizador-legal/
 ├── app.py              # Interfaz Streamlit
 ├── pdf_reader.py       # Extracción de texto del PDF
@@ -58,4 +59,5 @@ analizador-legal/
 ├── prompts.py          # Prompt del sistema
 ├── requirements.txt    # Dependencias
 └── assets/
-└── screenshot.png  # Screenshot de la app
+    └── screenshot.png  # Screenshot de la app
+```
